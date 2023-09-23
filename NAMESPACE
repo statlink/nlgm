@@ -1,0 +1,12 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("stats", nls, coef, rpois, nls.control, predict)
+
+importFrom("Rfast", rowmeans)
+importFrom("Rfast2", rowQuantile)
+importFrom("ggplot2", ggplot, aes, geom_point, theme_bw,
+           geom_line, theme, element_text, xlab, ylab)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+

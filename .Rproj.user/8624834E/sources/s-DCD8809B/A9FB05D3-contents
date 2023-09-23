@@ -1,0 +1,22 @@
+sessioninfo::package_info("Compositional")
+devtools::build_manual("~/R/win-library/4.0/Compositional", path = "C:/Users/Michail/Desktop/")
+
+
+sessioninfo::package_info("dCovTS")
+devtools::build_manual("~/R/win-library/4.0/dCovTS", path = "C:/Users/Michail/Desktop/")
+
+
+sessioninfo::package_info("PNAR")
+devtools::build_manual("~/R/win-library/4.0/PNAR", path = "C:/Users/Michail/Desktop/")
+
+
+sessioninfo::package_info("cauchypca")
+devtools::build_manual("~/R/win-library/4.0/cauchypca", path = "C:/Users/Michail/Desktop/")
+
+
+sessioninfo::package_info("nlgm")
+devtools::build_manual("~/R/win-library/4.0/nlgm", path = "C:/Users/Michail/Desktop/")
+
+
+sessioninfo::package_info("fertilmodel")
+devtools::build_manual("~/R/win-library/4.0/fertilmodel", path = "C:/Users/Michail/Desktop/")
