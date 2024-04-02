@@ -1,0 +1,10 @@
+mod <- function(par, y, ti) {
+  a <- par[1] ; k <- par[2] ; g <- par[3] ; h <- par[4]
+  y - a * ( 1 + k * exp(  g / k * (ti - h) ) )
+}
+
+b<-nls.lm(par = c(mean(y), 1, 1, 35), fn = mod, y = y, ti = ti, 
+       control = nls.lm.control(maxiter = 1024, maxfev = 2000) )
+            
+mod <- nlsr( y ~ a * ( 1 + k * exp(  g / k * (ti - h) ) ),
+            start = c( a = mean(y), k = 1, g = 1, h = 45 ), data = data.frame(y=y, ti=ti) )
